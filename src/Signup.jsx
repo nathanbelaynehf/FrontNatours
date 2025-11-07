@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import { useAuth } from './AuthContext';
+import Footer from './Footer';
 
 const Signup = () => {
   const { handleLogin } = useAuth(); // Get handleLogin from context
@@ -229,6 +230,7 @@ const Signup = () => {
           </form>
         </div>
       </main>
+      <Footer/>
     </>
   );
 };
